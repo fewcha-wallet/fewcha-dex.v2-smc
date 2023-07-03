@@ -1,0 +1,17 @@
+[package]
+name = "fewcha_dex"
+version = "0.0.1"
+upgrade_policy = "compatible"
+
+[addresses]
+module_addr = "_"
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+pancake = "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa"
+# switchboard = "0xc9b4bb0b1f7a343687c4f8bc6eea36dd2a3aa8d654e640050ab5b8635a6b9cbd" # Mainnet
+switchboard = "0xb91d3fef0eeb4e685dc85e739c7d3e2968784945be4424e92e2f86e2418bf271" # Testnet
+
+[dependencies]
+AptosFramework = { git="https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-framework", rev="a1ac5edd7003e258266ba0d819ec82d09db23f27" }
+Switchboard = { git = "https://github.com/switchboard-xyz/sbv2-aptos.git", subdir = "move/switchboard/", rev = "main" }
